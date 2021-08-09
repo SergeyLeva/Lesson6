@@ -30,24 +30,25 @@ public class MainActivity2 extends AppCompatActivity {
         menu.add(2, 2, 2, "третья ");
 
         return super.onCreateOptionsMenu(menu);
-       }
-        @Override
-        public boolean onOptionsItemSelected (@NonNull MenuItem item){
-            if (item.getItemId() == 0) {
-                Intent intentOne = new Intent(MainActivity2.this, MainActivity.class);
-                startActivity(intentOne);
-            }
-            if (item.getItemId() == 1) {
-                Intent intentSecond = new Intent(MainActivity2.this, MainActivity2.class);
-                startActivity(intentSecond);
-            }
-            if (item.getItemId() == 2) {
-                Intent intentThree = new Intent(MainActivity2.this, MainActivity3.class);
-                startActivity(intentThree);
-            }
-
-            return super.onOptionsItemSelected(item);
-        }
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == 0) {
+            Intent intentOne = new Intent(MainActivity2.this, MainActivity.class);
+            startActivity(intentOne);
+        }
+        if (item.getItemId() == 1) {
+            Intent intentSecond = new Intent(MainActivity2.this, MainActivity2.class);
+            startActivity(intentSecond);
+        }
+        if (item.getItemId() == 2) {
+            Intent intentThree = new Intent(MainActivity2.this, MainActivity3.class);
+            startActivity(intentThree);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
 
 
